@@ -1,16 +1,18 @@
 import Hello from "./components/Hello";
 
 function App() {
-  const seatNumbers = [1, 4, 7];
+  const person = {
+    name: "Ben",
+    emoji: "😍",
+    message: "umepotea sana",
+    seatNumbers: [1, 4, 7],
+  };
+  {
+    /* This is the object that will be passed as a prop */
+  }
   return (
     <div className="App">
-      <Hello
-        name="Benjie"
-        message="Goodmorning"
-        emoji="😍"
-        seatNumbers={seatNumbers}
-      />{" "}
-      {/*emoji picker is windows + period  */}
+      <Hello person={person} />
     </div>
   );
 }
