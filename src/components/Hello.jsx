@@ -1,13 +1,9 @@
-const name = "Papi Chulo";
-
-function displaymessage() {
-  return "what a wow!";
-}
-function Hello() {
+function Hello(props) {
   return (
     <div>
-      <h1>Hello from the other side!! {displaymessage()}</h1> <br />{" "}
-      <h1>Mr {name}</h1>
+      <h1>
+        {props.message} {props.name}
+      </h1>
     </div>
   );
 }
