@@ -11,6 +11,9 @@
 
 export default function ConditionalComponent() {
   const display = false;
-  let message = display ? "We are the Chosen generation" : "We are lost people";
-  return message;
+  return display ? (
+    <h1>"We are the Chosen generation"</h1>
+  ) : (
+    "We are lost people"
+  );
 }
